@@ -4,38 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Your Name - 二次元风格个人网页</title>
+    <title>Chlois Huang - Project Preview</title>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>二次元世界的探索者</p>
+        <h1>Project Preview</h1>
+        <p></p>
     </header>
-    <main>
-        <section class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <div class="project-info">
-                <h2>神秘森林之旅</h2>
-                <p>在这个神秘的森林中，探索各种神奇的生物和景观。</p>
+    <!-- 与之前的部分保持一致 -->
+
+        <main>
+            <div class="project-container">
+                <div class="project-tabs">
+                    <div class="tab" data-tab="project1">
+                        <h2>基于ChatGPT的桌面聊天机器人</h2>
+                    </div>
+                    <div class="tab" data-tab="project2">
+                        <h2>远程多人聊天工具</h2>
+                    </div>
+                    <div class="tab" data-tab="project3">
+                        <h2>ChatGPT自动故事生成器</h2>
+                    </div>
+                    <div class="tab" data-tab="project4">
+                        <h2>网页端照片上传抽卡器</h2>
+                    </div>
+                    <div class="tab" data-tab="project5">
+                        <h2>可视化ubuntu grep工具</h2>
+                    </div>
+                    <div class="tab" data-tab="project6">
+                        <h2>基于Unity的3d动画</h2>
+                    </div>
+                    <div class="tab" data-tab="project7">
+                        <h2>基于pygame的2d随机地图</h2>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="preview" id="project1">
+                        <img src="project1_1.jpg" alt="Project 1 Preview 1">
+                        <img src="project1_2.jpg" alt="Project 1 Preview 2">
+                    </div>
+                    <div class="preview" id="project2">
+                        <img src="project2_1.jpg" alt="Project 2 Preview 1">
+                        <img src="project2_2.jpg" alt="Project 2 Preview 2">
+                    </div>
+                    <div class="preview" id="project3">
+                        <img src="project3_1.jpg" alt="Project 3 Preview 1">
+                        <img src="project3_2.jpg" alt="Project 3 Preview 2">
+                    </div>
+                    <div class="preview" id="project4">
+                        <video id="chouka" width="800" height="500" muted controls autoplay="autoplay" preload="auto" loop="loop">
+                            <source src="images/chouka.mp4"/>
+                        </video>
+                    </div>
+                    <div class="preview" id="project5">
+                        <p>基于pygkt实现ubuntu grep GUI</p>
+                        <img src="images/grep_tool.png" alt="Project 5 Preview 1">
+                    </div>
+                    <div class="preview" id="project6">
+                        <img src="project6_1.jpg" alt="Project 6 Preview 1">
+                        <img src="project6_2.jpg" alt="Project 6 Preview 2">
+                    </div>
+                    <div class="preview" id="project7">
+                        <img src="images/pygame.gif" alt="Project 7 Preview 1">
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <div class="project-info">
-                <h2>魔法少女奇幻记</h2>
-                <p>跟随年轻的魔法少女，展开一场拯救世界的冒险之旅。</p>
-            </div>
-        </section>
-        <section class="project">
-            <img src="project3.jpg" alt="Project 3">
-            <div class="project-info">
-                <h2>未来科技展示</h2>
-                <p>探索未来世界的科技奇观，体验前所未有的科技创新。</p>
-            </div>
-        </section>
-    </main>
+        </main>
+
     <footer>
-        <p>Contact me at: your@email.com</p>
+        <p>Contact me at: chlois.huang@outlook.com</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

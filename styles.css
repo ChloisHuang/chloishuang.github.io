@@ -6,9 +6,11 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #7ddaffce;
+    color: rgba(6, 76, 134, 0.897);
     text-align: center;
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 50px; */
     padding: 2em;
 }
 
@@ -34,7 +36,7 @@ main {
 }
 
 .project:hover {
-    transform: translateY(-5px);
+    transform: translateX(-5px);
 }
 
 .project img {
@@ -44,8 +46,32 @@ main {
     border-top-right-radius: 8px;
 }
 
+/* ...之前的样式... */
+
+/* ...之前的样式... */
+
+.project-container {
+    display: flex;
+    gap: 2em;
+}
+
+/* .project-tabs {
+    /* ...之前的样式... */
+    background-color: white;
+} */
+
+/* ...之前的样式... */
+
 .project-info {
-    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #f0f0f0;;
+    padding: 1em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex: 1;
+    overflow: hidden;
 }
 
 .project-info h2 {
@@ -53,9 +79,46 @@ main {
     margin-top: 0;
 }
 
+/* ...之后的样式... */
+
+
+.tab {
+    padding: 1em;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    color: rgba(6, 76, 134, 0.897);
+    min-width: 240px;
+    max-width:240px;
+    font-size: 11px;
+}
+
+.tab:hover {
+    transform: translateX(-8px);
+    background-color: #7ddaff56;
+}
+
+.project-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.preview {
+    display: none;
+}
+
+/* ...之后的样式... */
+
+
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #333;
-    color: white;
-}
+    background-color: #7ddaffce;
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    color: rgba(6, 76, 134, 0.897);
