@@ -114,6 +114,33 @@ main {
 
 /* ...之后的样式... */
 
+.wrapper{
+    display:grid;
+    grid-template-areas:
+        'box1 box2 box3'
+        'box4 box5 box5';
+    grid-gap: 1rem;
+}
+.box1{
+    text-align:center;
+    grid-area:box1;
+}
+.box2{
+    grid-area:box2;
+    text-align:center;
+}
+.box3{
+    grid-area:box3;
+    text-align:center;
+}
+.box4{
+    grid-area:box4;
+    text-align:center;
+}
+.box5{
+    grid-area:box5;
+    text-align:center;
+}
 
 footer {
     text-align: center;
@@ -122,3 +149,4 @@ footer {
     /* border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px; */
     color: rgba(6, 76, 134, 0.897);
+}
