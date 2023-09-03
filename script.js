@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.getElementById("myFooter");
+    const main = document.getElementById("myMain");
+
+    //footer.style.transform = "translateY(0px)";
+    main.style.height = "550px";
+
     const tabs = document.querySelectorAll(".tab");
     const previews = document.querySelectorAll(".preview");
     let currentTab = 0;
