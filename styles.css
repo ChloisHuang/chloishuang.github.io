@@ -119,8 +119,8 @@ main {
     cursor: pointer;
     transition: all 0.4s ease-in-out;
     color: rgba(6, 76, 134, 0.897);
-    min-width: 220px;
-    max-width:220px;
+    min-width: 240px;
+    max-width:240px;
     font-size: 0.9vw;
 }
 
