@@ -10,14 +10,57 @@ body {
 }
 
 header {
-    background-color: #7ddaffce;
+    background-color: #7ddaff;
     color: rgba(6, 76, 134, 0.897);
     text-align: center;
     /* border-top-left-radius: 50px;
     border-top-right-radius: 50px; */
-    padding: 2em;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    box-shadow: 10px 10px 0px #01658dce;
+}
+
+.lockerheader{
+    transform-origin: bottom center;
+    transform: translateY(5px) rotate(90deg);
+    transition: transform 0.5s;
+    min-width:100px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #01658dce;
+    border-top: 10px solid #01658dce;
+    border-left: 10px solid #01658dce;
+    border-right: 10px solid #01658dce;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    margin:0 auto;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 9;
+}
+
+.lockerfooter{
+    transform-origin: top center;
+    transform: translateY(10px) rotate(90deg);
+    transition: transform 0.5s;
+    min-width:100px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #52baff;
+    border-bottom: 10px solid #01658dce;
+    border-left: 10px solid #01658dce;
+    border-right: 10px solid #01658dce;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin:0 auto;
+    margin-top: 0px;
+    position: relative;
+    z-index: 9;
 }
 
 .txt {
@@ -30,23 +73,23 @@ header {
     max-height:30px;
     display: flex;
     text-align: center;
-    margin-left:15px;
-    margin-right:15px;
+    /* margin-left:15px;
+    margin-right:15px; */
     margin-top:15px;
     margin-bottom:15px;
 }
 
 main {
+    transform: translateX(5px);
     height: 0px;
-    transition: height 2s;
+    transition: height 2s 0.5s;
     flex-grow: 1;
-    padding: 2em;
     margin: 0 auto;
-    padding: 2em;
+    /* padding: 2em; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2em;
-    background-color: #f2fbff;
+    /* gap: 2em; */
+    background-color: #d3f2ff88;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +153,7 @@ main {
     border-radius: 10px;
     flex-direction: row;
     border: 15px solid #7ddaffce;
-    background-color: lavenderblush;
+    background-color: white;
     min-width: 780px;
     max-width: 780px;
     max-height: 481px;
@@ -126,12 +169,12 @@ main {
 
 .tab {
     padding: 1em;
-    background: linear-gradient(135deg, #f2fbff 20px,transparent 0) top left,
-    linear-gradient(45deg,#f2fbff 20px,transparent 0) bottom right;
+    /* background: linear-gradient(135deg, #d3f2ff88 20px,transparent 0) top left,
+    linear-gradient(45deg,#d3f2ff88 20px,transparent 0) bottom left; */
     background-color: white;
-    /*border-top-left-radius: 10px;*/
-    /*border-bottom-left-radius: 10px;*/
-    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px 0 20px 0;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -189,14 +232,17 @@ main {
 }
 
 footer {
-    transform: translateY(0px);
+    transform: translateY(-5px);
     transition: transform 1s;
     text-align: center;
-    padding: 1em;
-    background-color: #7ddaffce;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #7ddaff;
     /* border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px; */
     color: rgba(6, 76, 134, 0.897);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 0px #01658dce;
 }

@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById("myFooter");
     const main = document.getElementById("myMain");
+    const locker1 = document.getElementById("locker1");
+    const locker2 = document.getElementById("locker2");
 
     //footer.style.transform = "translateY(0px)";
-    main.style.height = "550px";
+    locker1.style.transform = "translateY(5px) rotate(0deg)";
+    locker2.style.transform = "translateY(10px) rotate(0deg)";
+    main.style.height = "640px";
 
     const tabs = document.querySelectorAll(".tab");
     const previews = document.querySelectorAll(".preview");
