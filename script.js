@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const locker1 = document.getElementById("locker1");
     const locker2 = document.getElementById("locker2");
 
-    //footer.style.transform = "translateY(0px)";
-    locker1.style.transform = "translateY(5px) rotate(0deg)";
-    locker2.style.transform = "translateY(10px) rotate(0deg)";
+    footer.style.transform = "translateY(-10px)";
+    locker1.style.transform = "translateY(-5px) translateX(0px) rotate(0deg)";
+    locker2.style.transform = "translateY(15px) translateX(0px) rotate(0deg)";
     main.style.height = "640px";
 
     const tabs = document.querySelectorAll(".tab");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         previews[tabIndex].style.display = "block";
         tabs.forEach(tab => {
             tab.classList.remove("active", "hover");
-            tab.style.backgroundColor = "white";
+            tab.style.backgroundColor = "#f8f8f8";
         });
         tabs[tabIndex].classList.add("active");
         tabs[tabIndex].style.backgroundColor = "#7ddaff56";

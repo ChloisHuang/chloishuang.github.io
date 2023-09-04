@@ -23,44 +23,77 @@ header {
     box-shadow: 10px 10px 0px #01658dce;
 }
 
-.lockerheader{
-    transform-origin: bottom center;
-    transform: translateY(5px) rotate(90deg);
-    transition: transform 0.5s;
+.lockerheaderborder{
+    transform: translateY(0px);
     min-width:100px;
     max-width: 100px;
     min-height: 50px;
     max-height: 50px;
-    background-color: #01658dce;
-    border-top: 10px solid #01658dce;
-    border-left: 10px solid #01658dce;
-    border-right: 10px solid #01658dce;
+    background-color: transparent;
+    border-top: 10px solid #01658d;
+    border-left: 10px solid #01658d;
+    border-right: 10px solid #01658d;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    margin:0 auto;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 9;
+}
+
+.lockerfooterborder{
+    transform: translateY(0px);
+    min-width:100px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: transparent;
+    border-bottom: 10px solid rgb(102, 168, 212);
+    border-left: 10px solid rgb(102, 168, 212);
+    border-right: 10px solid rgb(102, 168, 212);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin:0 auto;
+    margin-top: -40px;
+    position: relative;
+    z-index: 9;
+}
+
+.lockerheader{
+    transform-origin: bottom center;
+    transform: translateY(-0.5px) translateX(0.0px) rotate(90deg);
+    transition: transform 1.0s 0.5s;
+    min-width:100px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #01658d;
+    /*border-top: 10px solid #01658dce;*/
+    /*border-left: 10px solid #01658dce;*/
+    /*border-right: 10px solid #01658dce;*/
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     margin:0 auto;
     margin-bottom: 0px;
     position: relative;
-    z-index: 9;
+    z-index: 6;
 }
 
 .lockerfooter{
     transform-origin: top center;
-    transform: translateY(10px) rotate(90deg);
-    transition: transform 0.5s;
+    transform: translateY(10.5px) translateX(-0.0px) rotate(90deg);
+    transition: transform 1.0s 0.5s;
     min-width:100px;
     max-width: 100px;
     min-height: 50px;
     max-height: 50px;
-    background-color: #52baff;
-    border-bottom: 10px solid #01658dce;
-    border-left: 10px solid #01658dce;
-    border-right: 10px solid #01658dce;
+    background-color: rgb(102, 168, 212);
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     margin:0 auto;
-    margin-top: 0px;
+    margin-top: -10px;
     position: relative;
-    z-index: 9;
+    z-index: 8;
 }
 
 .txt {
@@ -82,7 +115,7 @@ header {
 main {
     transform: translateX(5px);
     height: 0px;
-    transition: height 2s 0.5s;
+    transition: height 2s 1.5s;
     flex-grow: 1;
     margin: 0 auto;
     /* padding: 2em; */
@@ -94,10 +127,22 @@ main {
     justify-content: center;
     align-items: center;
     overflow:hidden;
+    background: linear-gradient(
+        45deg,
+        #d3f2ff88 0,
+        #d3f2ff88 25%,
+        #beeafd88 25%,
+        #beeafd88 50%,
+        #d3f2ff88 50%,
+        #d3f2ff88 75%,
+        #beeafd88 75%,
+        #beeafd88
+    );
+    background-size: 200px 200px;
 }
 
 .project {
-    background-color: white;
+    background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -153,7 +198,8 @@ main {
     border-radius: 10px;
     flex-direction: row;
     border: 15px solid #7ddaffce;
-    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
     min-width: 780px;
     max-width: 780px;
     max-height: 481px;
@@ -171,7 +217,7 @@ main {
     padding: 1em;
     /* background: linear-gradient(135deg, #d3f2ff88 20px,transparent 0) top left,
     linear-gradient(45deg,#d3f2ff88 20px,transparent 0) bottom left; */
-    background-color: white;
+    background-color: #f8f8f8;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -232,8 +278,8 @@ main {
 }
 
 footer {
-    transform: translateY(-5px);
-    transition: transform 1s;
+    transform: translateY(0px);
+    transition: transform 2s 1.5s;
     text-align: center;
     padding-bottom: 2em;
     padding-left: 2em;
