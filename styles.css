@@ -61,8 +61,8 @@ header {
 
 .lockerheader{
     transform-origin: bottom center;
-    transform: translateY(-0.5px) translateX(0.0px) rotate(90deg);
-    transition: transform 1.0s 0.5s;
+    transform: translateY(-0.2px) translateX(0.0px) rotate(135deg);
+    transition: transform 1.0s;
     min-width:100px;
     max-width: 100px;
     min-height: 50px;
@@ -81,8 +81,8 @@ header {
 
 .lockerfooter{
     transform-origin: top center;
-    transform: translateY(10.5px) translateX(-0.0px) rotate(90deg);
-    transition: transform 1.0s 0.5s;
+    transform: translateY(10.2px) translateX(-0.0px) rotate(135deg);
+    transition: transform 1.0s;
     min-width:100px;
     max-width: 100px;
     min-height: 50px;
@@ -115,7 +115,7 @@ header {
 main {
     transform: translateX(5px);
     height: 0px;
-    transition: height 2s 1.5s;
+    transition: height 2s 1s;
     flex-grow: 1;
     margin: 0 auto;
     /* padding: 2em; */
@@ -138,7 +138,7 @@ main {
         #beeafd88 75%,
         #beeafd88
     );
-    background-size: 200px 200px;
+    background-size: 270px 270px;
 }
 
 .project {
@@ -199,7 +199,7 @@ main {
     flex-direction: row;
     border: 15px solid #7ddaffce;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f8f8f8;
+    background-color: #f8f8f888;
     min-width: 780px;
     max-width: 780px;
     max-height: 481px;
@@ -279,7 +279,7 @@ main {
 
 footer {
     transform: translateY(0px);
-    transition: transform 2s 1.5s;
+    transition: transform 2s 1s;
     text-align: center;
     padding-bottom: 2em;
     padding-left: 2em;
