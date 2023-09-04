@@ -25,14 +25,14 @@ header {
 
 .lockerheaderborder{
     transform: translateY(0px);
-    min-width:100px;
-    max-width: 100px;
-    min-height: 50px;
-    max-height: 50px;
+    min-width:90px;
+    max-width: 90px;
+    min-height: 45px;
+    max-height: 45px;
     background-color: transparent;
-    border-top: 10px solid #01658d;
-    border-left: 10px solid #01658d;
-    border-right: 10px solid #01658d;
+    border-top: 15px solid #01658d;
+    border-left: 15px solid #01658d;
+    border-right: 15px solid #01658d;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     margin:0 auto;
@@ -43,14 +43,14 @@ header {
 
 .lockerfooterborder{
     transform: translateY(0px);
-    min-width:100px;
-    max-width: 100px;
-    min-height: 50px;
-    max-height: 50px;
+    min-width:90px;
+    max-width: 90px;
+    min-height: 45px;
+    max-height: 45px;
     background-color: transparent;
-    border-bottom: 10px solid rgb(102, 168, 212);
-    border-left: 10px solid rgb(102, 168, 212);
-    border-right: 10px solid rgb(102, 168, 212);
+    border-bottom: 15px solid rgb(102, 168, 212);
+    border-left: 15px solid rgb(102, 168, 212);
+    border-right: 15px solid rgb(102, 168, 212);
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     margin:0 auto;
@@ -61,8 +61,8 @@ header {
 
 .lockerheader{
     transform-origin: bottom center;
-    transform: translateY(-0.2px) translateX(0.0px) rotate(135deg);
-    transition: transform 1.0s;
+    transform: translateY(-0.2px) translateX(0.0px) rotate(90deg);
+    transition: transform 1.0s 0.5s;
     min-width:100px;
     max-width: 100px;
     min-height: 50px;
@@ -81,8 +81,8 @@ header {
 
 .lockerfooter{
     transform-origin: top center;
-    transform: translateY(10.2px) translateX(-0.0px) rotate(135deg);
-    transition: transform 1.0s;
+    transform: translateY(10.2px) translateX(-0.0px) rotate(90deg);
+    transition: transform 1.0s 0.5s;
     min-width:100px;
     max-width: 100px;
     min-height: 50px;
@@ -115,7 +115,7 @@ header {
 main {
     transform: translateX(5px);
     height: 0px;
-    transition: height 2s 1s;
+    transition: height 2s 1.5s;
     flex-grow: 1;
     margin: 0 auto;
     /* padding: 2em; */
@@ -279,7 +279,7 @@ main {
 
 footer {
     transform: translateY(0px);
-    transition: transform 2s 1s;
+    transition: transform 2s 1.5s;
     text-align: center;
     padding-bottom: 2em;
     padding-left: 2em;
